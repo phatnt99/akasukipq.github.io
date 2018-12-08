@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,39 +13,81 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
-
+    <link href="css/themify-icons.css" rel="stylesheet">
+<style type="text/css">
+hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:none;border-top:solid .25rem;margin-top:2.5rem;margin-bottom:2.5rem;margin-left:auto;margin-right:auto}hr.star-dark:after,hr.star-light:after{position:relative;top:-.8em;display:inline-block;padding:0 .25em;content:'\f005';font-family:"Font Awesome 5 Free";font-weight:900;font-size:2em}hr.star-light{border-color:#fff}hr.star-light:after{color:#fff;background-color:#18bc9c}hr.star-dark{border-color:#2c3e50}hr.star-dark:after{color:#2c3e50;background-color:#fff}
+  .borderCard {
+    border-left:6px solid rgb(20, 76, 178)!important;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .borderCard:hover {
+    border-left:6px solid rgb(20, 76, 178)!important;
+    border-color: blue;
+        -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    margin-top: -5px;
+  }
+  .team {
+    width: 225px;
+    height: 225px;
+    border-radius: 50% !important;
+    border: 7px solid #fff;
+  }
+  .btn-social {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.logo {
+  background-color: white;
+}
+.logo:hover {
+    background-color: white;
+  border: 2px solid blue;
+      transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card1:hover {
+  border: 2px solid blue;
+}
+</style>
   </head>
 
-  <body>
+  <body style="font-family: Montserrat">
 
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:rgb(20,76,178)">
       <div class="container">
-        <div style="background-color:white; height:130px; width:130px; position: absolute;" >              
+        <div class="logo" style="height:120px; width:145px; position: absolute;padding-top: 36px;" >
+        <img src="images/git.jpg" style="height:86px; width:160px; margin-left: -7px;margin-top:-9px">              
         </div>
-        <a class="navbar-brand" href="#" style="z-index: 1; margin-left: 25px; margin-bottom: -4px; font-weight: 900; color:rgb(52,99,187)">QuizEng</a> 
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#">Trang chủ
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quiz</a>
+                        <li class="nav-item">
+              <a class="nav-link" href="#Gioithieu">Giới thiệu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="js-scroll-trigger nav-link" href="#Quiz">Quiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#Team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Lienhe">Liên hệ</a>
             </li>
           </ul>
         </div>
@@ -55,85 +98,405 @@
     <div class="container">
 
       <!-- Jumbotron Header -->
-      <header class="jumbotron my-4" style="background-image: url('images/nen.png');">
+      <header class="jumbotron my-4" style="background: url('images/thuy.jpg') no-repeat center center fixed;background-size: cover;">
         <h1 class="display-3" style="font-weight:1000;color:rgb(17,13,172); text-align: center">QuizEng</h1>
-        <p class="lead" style="text-align: center;max-width: 1000px;margin-left: 130px;margin-right: 130px; font-weight:500;">Làm quiz để kiểm tra trình độ Anh Văn của bạn và tìm cho mình một phương pháp học Tiếng Anh hiệu quả.</p>
-        <a href="#" class="btn btn-primary btn-lg">Start Quiz</a>
+        <p class="lead" style="font-weight:500;">Làm quiz để kiểm tra trình độ Anh Văn của bạn và tìm cho mình một phương pháp học Tiếng Anh hiệu quả.</p>
+        <a href="#" class="btn btn-primary btn-lg" style="margin: 0 auto">Start Quiz</a>
       </header>
 
+      <!-- Page Introduction -->
+      <div class="container" style="padding-top: 20px" id="Gioithieu">
+
+        <h2  style="text-align: center;">GIỚI THIỆU</h2>
+                      <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features borderCard">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="gradient-fill ti-3x mr-3"><img src="images/icmisson.png" width="48px" height="48px"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Mục đích</h4>
+                                    <p class="card-text">- Kiểm tra sơ lược trình độ Anh văn hiện tại.</p>
+                                    <p class="card-text">- Cung cấp 1 số phương pháp, lộ trình, kỹ năng học Anh văn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features borderCard">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="gradient-fill ti-3x mr-3"><img src="images/icHinhThuc.png" width="48px" height="48px"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Hình thức</h4>
+                                    <p class="card-text">Bài test dưới dạng câu trắc nghiệm về 4 kỹ năng Anh văn trải dài trên mọi chủ đề.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features borderCard">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="gradient-fill ti-3x mr-3"><img src="images/icLoiIch.png" width="48px" height="48px"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Lợi ích</h4>
+                                    <p class="card-text">Giúp bạn biết được kiến thức hiện tại và tìm được một số định hướng lộ trình học Anh văn ở đây.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+      </div>
+      <!-- End -->
+
       <!-- Page Features -->
+      <div class="container" style="text-align: center; padding-top: 40px" id="Quiz">
+        <h2>CHỌN QUIZ</h2>
+        <hr class="star-dark mb-5">
+      </div>
       <div class="row text-center">
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card card1">
+            <img class="card-img-top" src="images/listenning.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <h4 class="card-title">Nghe</h4>
+              <p class="card-text">Bài test phần Nghe gồm 20 câu trắc nghiệm hoàn thành trong xtime phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-primary">Làm Quiz</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card card1">
+            <img class="card-img-top" src="images/speaking.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+              <h4 class="card-title">Nói</h4>
+              <p class="card-text">Bài test phần Nói gồm 20 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-primary">Làm Quiz</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card card1">
+            <img class="card-img-top" src="images/writing.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <h4 class="card-title">Viết</h4>
+              <p class="card-text">Bài test phần Viết gồm 10 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-primary">Làm Quiz</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card card1">
+            <img class="card-img-top" src="images/reading.png" alt="">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+              <h4 class="card-title">Đọc</h4>
+              <p class="card-text">Bài test phần Đọc gồm 20 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a href="#" class="btn btn-primary">Làm Quiz</a>
             </div>
           </div>
         </div>
 
       </div>
       <!-- /.row -->
-
+      <!-- Page About Team-->
+    <div style="padding-top: 20px" id="Team">
+      <h1 style="text-align: center;">Team</h1>
+              <hr class="star-dark mb-5">
+        <div class="row"  style="text-align: center;">
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Phúc Nguyễn</h4>
+              <p class="text-muted">Content writer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Thủy Dương</h4>
+              <p class="text-muted">Leader - Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Phát Nguyễn</h4>
+              <p class="text-muted">Lead Developer - Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Thành Trương</h4>
+              <p class="text-muted">Content writer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>          
+        </div>  
+                <div class="row"  style="text-align: center;">
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Tấn Nguyễn</h4>
+              <p class="text-muted">Content writer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Quyên Đặng</h4>
+              <p class="text-muted">Content writer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Vương Lê</h4>
+              <p class="text-muted">Content writer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member">
+              <img class="team" src="images/icLoiIch.png" alt="">
+              <h4>Kim Trần</h4>
+              <p class="text-muted">Content writer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>          
+        </div>     
+    </div>
+      <!-- End-->
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark" style="padding-bottom: 1rem!important">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+                <div class="row" style="text-align: center; color: white">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">địa điểm</h4>
+            <p class="lead mb-0">Đại học Công nghệ thông tin
+              <br>DHQG TP.Hồ Chí Minh</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4"id="Lienhe">liên hệ</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/Senlucifer">
+                  <i class="fab fa-fw fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fab fa-fw fa-google-plus-g"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Thông tin</h4>
+            <p class="lead mb-0">Đồ án của nhóm Octakill môn Kỹ năng nghề nghiệp SS04.J11.</p>
+          </div>
+        </div>
+        <hr>
+        <p class="m-0 text-center text-white">Copyright &copy; QuizEng 2018</p>
       </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script type="text/javascript">
+  // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
   </body>
 
 </html>
