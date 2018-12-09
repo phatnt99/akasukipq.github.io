@@ -17,6 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
     <link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 <style type="text/css">
 hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:none;border-top:solid .25rem;margin-top:2.5rem;margin-bottom:2.5rem;margin-left:auto;margin-right:auto}hr.star-dark:after,hr.star-light:after{position:relative;top:-.8em;display:inline-block;padding:0 .25em;content:'\f005';font-family:"Font Awesome 5 Free";font-weight:900;font-size:2em}hr.star-light{border-color:#fff}hr.star-light:after{color:#fff;background-color:#18bc9c}hr.star-dark{border-color:#2c3e50}hr.star-dark:after{color:#2c3e50;background-color:#fff}
   .borderCard {
@@ -53,7 +54,11 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
 .card1:hover {
   border: 2px solid blue;
 }
+    .test {
+      display: none;
+    }
 </style>
+<script src="js/quiz.js" type="text/javascript"/></script>
   </head>
 
   <body style="font-family: Montserrat">
@@ -95,7 +100,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
 
     <!-- Page Content -->
     <div class="container">
-
+      <article>
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4" style="background: url('images/thuy.jpg') no-repeat center center fixed;background-size: cover;">
         <h1 class="display-3" style="font-weight:1000;color:rgb(17,13,172); text-align: center">QuizEng</h1>
@@ -188,7 +193,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
               <p class="card-text">Bài test phần Nói gồm 20 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Làm Quiz</a>
+              <a href="#" class="btn btn-primary" onclick="xoa()">Làm Quiz</a>
             </div>
           </div>
         </div>
@@ -423,6 +428,8 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
         </div>     
     </div>
       <!-- End-->
+      </article>
+      <div id="quiz"></div>
     </div>
     <!-- /.container -->
 
@@ -462,12 +469,11 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript">
-  // Select all links with hashes
-$('a[href*="#"]')
+    <!--Script giúp lướt xuống ID mượt -->
+    <script type="text/javascript">
+      $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -502,7 +508,8 @@ $('a[href*="#"]')
       }
     }
   });
-</script>
+    </script>
+    <!--End-->
   </body>
 
 </html>
