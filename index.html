@@ -33,8 +33,8 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
     margin-top: -5px;
   }
   .team {
-    width: 225px;
-    height: 225px;
+    width: 210px;
+    height: 210px;
     border-radius: 50% !important;
     border: 7px solid #fff;
   }
@@ -74,7 +74,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
         <div class="collapse navbar-collapse" id="navbarResponsive" >
           <ul class="navbar-nav ml-auto" style="float:right;">
             <li class="nav-item active">
-              <a class="nav-link" href="https://akasukipq.github.io/">Trang chủ
+              <a class="nav-link" href="https://akasukipq.github.io">Trang chủ
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -86,6 +86,9 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Team">Team</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href=>Review</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Lienhe">Liên hệ</a>
@@ -176,11 +179,11 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           <div class="card card1">
             <img class="card-img-top" src="images/listenning.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Nghe</h4>
+              <h4 class="card-title">Listening</h4>
               <p class="card-text">Bài test phần Nghe gồm 20 câu trắc nghiệm hoàn thành trong xtime phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Làm Quiz</a>
+              <a href="#" class="btn btn-primary" onclick="listening()">Làm Quiz</a>
             </div>
           </div>
         </div>
@@ -189,11 +192,11 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           <div class="card card1">
             <img class="card-img-top" src="images/speaking.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Nói</h4>
+              <h4 class="card-title">Reading</h4>
               <p class="card-text">Bài test phần Nói gồm 20 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary" onclick="xoa()">Làm Quiz</a>
+              <a href="#" class="btn btn-primary" onclick="speaking()">Làm Quiz</a>
             </div>
           </div>
         </div>
@@ -202,11 +205,11 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           <div class="card card1">
             <img class="card-img-top" src="images/writing.jpg" alt="">
             <div class="card-body">
-              <h4 class="card-title">Viết</h4>
+              <h4 class="card-title">Writting</h4>
               <p class="card-text">Bài test phần Viết gồm 10 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Làm Quiz</a>
+              <a href="#" class="btn btn-primary" onclick="writting()">Làm Quiz</a>
             </div>
           </div>
         </div>
@@ -215,17 +218,35 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           <div class="card card1">
             <img class="card-img-top" src="images/reading.png" alt="">
             <div class="card-body">
-              <h4 class="card-title">Đọc</h4>
+              <h4 class="card-title">Reading</h4>
               <p class="card-text">Bài test phần Đọc gồm 20 câu trắc nghiệm hoàn thành trong 15 phút.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Làm Quiz</a>
+              <a href="#" class="btn btn-primary" onclick="reading()">Làm Quiz</a>
             </div>
           </div>
         </div>
 
       </div>
       <!-- /.row -->
+      <!-- Page Review -->
+      <br>
+      <br>
+      <br>
+            <div class="container" style="text-align: center;" id="Quiz">
+        <h2>REVIEW</h2>
+        <hr class="star-dark mb-5">
+        <div class="card">
+          <h4 class="card-text">Team mình có Review một số Trung tâm tiếng Anh ở Quận Thủ Đức để thuận tiện cho các bạn lựa chọn phù hợp với nhu cầu học anh văn của mình. Cùng xem ngay nào!
+          </h4>
+          <a href="#" class="card-footer btn" style="color:black;font-size: x-large;" onclick="review()">Xem Review</a>
+        </div>
+      </div>
+
+      <!---/.row-->
+            <br>
+      <br>
+      <br>
       <!-- Page About Team-->
     <div style="padding-top: 20px" id="Team">
       <h1 style="text-align: center;">Team</h1>
@@ -233,7 +254,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
         <div class="row"  style="text-align: center;">
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/menava.png" alt="">
               <h4>Phúc Nguyễn</h4>
               <p class="text-muted">Content writer</p>
               <ul class="list-inline social-buttons">
@@ -257,7 +278,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/girlava.png" alt="">
               <h4>Thủy Dương</h4>
               <p class="text-muted">Leader - Designer</p>
               <ul class="list-inline social-buttons">
@@ -281,7 +302,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/menava.png" alt="">
               <h4>Phát Nguyễn</h4>
               <p class="text-muted">Lead Developer - Designer</p>
               <ul class="list-inline social-buttons">
@@ -305,7 +326,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/menava.png" alt="">
               <h4>Thành Trương</h4>
               <p class="text-muted">Content writer</p>
               <ul class="list-inline social-buttons">
@@ -331,7 +352,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
                 <div class="row"  style="text-align: center;">
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/menava.png" alt="">
               <h4>Tấn Nguyễn</h4>
               <p class="text-muted">Content writer</p>
               <ul class="list-inline social-buttons">
@@ -355,7 +376,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/menava.png" alt="">
               <h4>Quyên Đặng</h4>
               <p class="text-muted">Content writer</p>
               <ul class="list-inline social-buttons">
@@ -379,7 +400,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/menava.png" alt="">
               <h4>Vương Lê</h4>
               <p class="text-muted">Content writer</p>
               <ul class="list-inline social-buttons">
@@ -403,7 +424,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
           </div>
           <div class="col-sm-3">
             <div class="team-member">
-              <img class="team" src="images/icLoiIch.png" alt="">
+              <img class="team" src="images/girlava.png" alt="">
               <h4>Kim Trần</h4>
               <p class="text-muted">Content writer</p>
               <ul class="list-inline social-buttons">
@@ -429,7 +450,7 @@ hr.star-dark,hr.star-light{max-width:15rem;padding:0;text-align:center;border:no
     </div>
       <!-- End-->
       </article>
-      <div id="quiz"></div>
+      <div class="container" style="text-align: center;" id="quiz"></div>
     </div>
     <!-- /.container -->
 
